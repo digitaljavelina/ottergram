@@ -88,7 +88,7 @@ a {
 }
 
 .thumbnail-list-left, .thumbnail-list-right {
-    flex: 0 0 12em;
+    flex: 0 0 10em;
 }
 
 .thumbnail-list-left {
