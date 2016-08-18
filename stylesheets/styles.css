@@ -42,6 +42,12 @@ html, body {
 .detail-image-frame {
   text-align: center;
   position: relative;
+  transition: transform 333ms cubic-bezier(1, 0.06, 0.28, 1);
+}
+
+.is-tiny {
+  transform: scale(0.001);
+  transition: transform 0 ms;
 }
 
 .detail-image {
@@ -88,11 +94,16 @@ a {
     border: 1px solid rgb(100%, 100%, 100%);
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
     display: inline-block;
+    transition: transform 133ms ease-in-out;
+}
+
+.thumbnail-item:hover {
+  transform: scale(1.2);
 }
 
 .thumbnail-list {
     list-style: none;
-    padding: 0;
+    padding: 20px 0;
     white-space: nowrap;
     overflow-x: auto;
     flex: 0 1 auto;
@@ -134,6 +145,7 @@ a {
     flex-direction: column;
     order: 0;
     margin-left: 20px;
+    padding: 0 35px;
   }
 
   .thumbnail-item {
